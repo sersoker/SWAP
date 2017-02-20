@@ -1,0 +1,29 @@
+Servidor1:
+apache2 -v
+	Server version: Apache/2.4.18 (Ubuntu)
+	Server built:   2016-07-14T12:32:26
+
+ps aux | grep apache
+	root      1272  0.0  4.6 258244 23272 ?        Ss   18:58   0:00 /usr/sbin/apache2 -k start
+	www-data  1292  0.0  1.4 258476  7236 ?        S    18:58   0:00 /usr/sbin/apache2 -k start
+	www-data  1293  0.0  1.1 258284  5856 ?        S    18:58   0:00 /usr/sbin/apache2 -k start
+	www-data  1294  0.0  1.1 258284  5856 ?        S    18:58   0:00 /usr/sbin/apache2 -k start
+	www-data  1295  0.0  1.4 258316  7088 ?        S    18:58   0:00 /usr/sbin/apache2 -k start
+	www-data  1296  0.0  1.1 258284  5856 ?        S    18:58   0:00 /usr/sbin/apache2 -k start
+	www-data  1667  0.0  1.1 258284  5856 ?        S    19:08   0:00 /usr/sbin/apache2 -k start
+	root      1716  0.0  0.2  16756  1092 tty1     S+   19:10   0:00 grep --color=auto apache
+
+
+Servidor2:
+apache2 -v
+	Server version: Apache/2.4.18 (Ubuntu)
+	Server built:   2016-07-14T12:32:26
+
+ps aux | grep apache
+	root      1269  0.2  4.5 258244 22888 ?        Ss   19:14   0:00 /usr/sbin/apache2 -k start
+	www-data  1289  0.0  1.1 258268  5992 ?        S    19:14   0:00 /usr/sbin/apache2 -k start
+	www-data  1291  0.0  1.1 258268  5992 ?        S    19:14   0:00 /usr/sbin/apache2 -k start
+	www-data  1292  0.0  1.1 258268  5992 ?        S    19:14   0:00 /usr/sbin/apache2 -k start
+	www-data  1293  0.0  1.1 258268  5992 ?        S    19:14   0:00 /usr/sbin/apache2 -k start
+	www-data  1294  0.0  1.1 258268  5992 ?        S    19:14   0:00 /usr/sbin/apache2 -k start
+	root      1487  0.0  0.2  16756  1020 tty1     S+   19:17   0:00 grep --color=auto apache
