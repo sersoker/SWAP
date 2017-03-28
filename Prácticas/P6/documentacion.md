@@ -1,4 +1,4 @@
-# Práctica 4. Asegurar la granja web
+# Práctica 6. Discos RAID
 ## Autores:
 Javier Martínez Montilla
 Bryan Moreno Picamán
@@ -32,11 +32,11 @@ Bryan Moreno Picamán
 
 ![Captura7](./capturas/C07.png?raw=true)
 
-**8. Simulamos un fallo, desconexión y conexión del disco y observamos que los ficheros se mantienen sin ningun problema.**
+**8. Simulamos un fallo, desconexión y conexión del disco y observamos que los ficheros se mantienen sin ningún problema.**
 
 ![Captura8](./capturas/C08.png?raw=true)
 
-**9. Detalle del RAID del sistema con todos los dicos.**
+**9. Detalle del RAID del sistema con todos los discos.**
 
 ![Captura9](./capturas/C09.png?raw=true)
 
@@ -44,7 +44,7 @@ Bryan Moreno Picamán
 
 ![Captura10](./capturas/C10.png?raw=true)
 
-**11. Detalle del RAID del sistema con un disco añadido en caliente y que está reconstruyendo el sistema de datos para ser coherente con el disco existente del sistema.**
+**11. Detalle del RAID del sistema. Un disco añadido en caliente y que está reconstruyendo el sistema de datos para ser coherente con el disco existente.**
 
 ![Captura11](./capturas/C11.png?raw=true)
 
