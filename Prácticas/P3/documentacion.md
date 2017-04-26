@@ -39,3 +39,22 @@ Se han obviado las líneas #ip_hash y #keepalive para que la petición del mismo
 
 ![Captura10](./capturas/C23%20Probando%20HA.png?raw=true)
 
+###Parte Optativa. Configuración de un balanceador de carga con Pound
+
+**1. Instalamos pound con apt-get.**
+
+![Captura11](./capturas/C31.png?raw=true)
+
+**2. Ahora modificamos el archivo /etc/pound/pound.cfg de manera que se nos quedaría como se muestra a continuación: **
+
+*En ListenHTTP podemos cambiar la escucha de una IP fija a 0.0.0.0 para que escuche por todas las interfaces*
+![Captura12](./capturas/C32.png?raw=true)
+
+**3. Para que funcione también es necesario cambiar el fichero '/etc/default/pound' y poner el startup=1. **
+![Captura13](./capturas/C34.png?raw=true)
+
+**4. Una vez hecho todo esto solo nos queda reiniciar el servicio con '/etc/init.d/pound restart'.**
+![Captura14](./capturas/C35.png?raw=true)
+
+**5. Comprobamos que la visualización es correcta en ambas máquinas realizando curl al balanceador de carga.'.**
+![Captura15](./capturas/C36.png?raw=true)
