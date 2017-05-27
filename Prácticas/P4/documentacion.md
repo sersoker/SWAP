@@ -46,19 +46,15 @@ Bryan Moreno Picamán
 
 ![Captura10](./capturas/C21.png?raw=true)
 
-**2. Añadimos las reglas por comando para permitir acceso por el protocolo http/https y por ssh.**
+**2. Añadimos las reglas por medio de un script con el contenido mostrado a continuación.**
 
 ![Captura11](./capturas/C22.png?raw=true)
 
-**3. .**
+**4. Reiniciamos el servicio y vemos que todo funciona correctamente.**
 
-![Captura12](./capturas/C23.png?raw=true)
+![Captura13](./capturas/C23.png?raw=true)
 
-**4. Denegamos el acceso a icmp para que no se pueda hacer ping a la máquina.**
+**5. Finalmente incluimos el script en crontab.**
 
-![Captura13](./capturas/C24.png?raw=true)
-
-**5. Podemos comprobar que se puede hacer ping pero después de implementar la restricción para los paquetes icmp quedan bloqueados al intentarlo de nuevo.**
-
-![Captura14](./capturas/C25.png?raw=true)
+![Captura14](./capturas/C24.png?raw=true)
 
